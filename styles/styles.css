@@ -172,10 +172,8 @@ nav {
   text-align: center;
 
   background: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
     url(../img/hero-description-bg.img.jpg);
 }
 
@@ -380,11 +378,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
-}
-
-.social-link {
+  width: 100%;
+  height: 100%;
   fill: #afb1b8;
 }
 
@@ -414,6 +409,8 @@ nav {
 }
 
 .client-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,6 +453,7 @@ nav {
 
 footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-white {
@@ -503,7 +501,6 @@ footer .container {
 
 .join-us-title {
   margin: 0;
-  margin-top: 12px;
   text-align: start;
 
   font-style: normal;
@@ -601,8 +598,9 @@ footer .container {
   border-bottom: 1px solid var(--border-color);
 }
 
-.card:hover,
-.card:focus {
+.content a:hover,
+.content a:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
